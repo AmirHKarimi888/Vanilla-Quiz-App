@@ -7,6 +7,10 @@ const template = `
     <div class="question">
         
     </div>
+
+    <div class="pagination">
+
+    </div>
 </main>
 `
 
