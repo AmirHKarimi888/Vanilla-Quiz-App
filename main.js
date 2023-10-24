@@ -1,3 +1,4 @@
+import "./src/components/template";
 import "./src/css/style.css";
 import * as model from "./src/model";
 import view from "./src/view";
@@ -10,7 +11,7 @@ const controlQuestions = async () => {
 
   await model.loadQuestion(id);
 
-  view.render(model.state.question);
+  view.render(model.state);
 }
 
 window.addEventListener("hashchange", controlQuestions);
