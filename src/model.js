@@ -68,30 +68,48 @@ let questions = [
     }
 ];
 
+
+
 export const loadQuestion = async (id) => {
 
-    try {
-        await fetch(uri + "questions")
-        .then(res => res.json())
-        .then((data) => {
-            questions = data;
-            state.number = questions.length;
-        })
-        .then(() => {
-            questions.map((q) => {
-                if(state.clientAnswers.length < state.number) {
-                    state.clientAnswers = [ ...state.clientAnswers, { id: q.id, choice: 0, t: 0, f: 0, n: 1 } ]
-                }
-            })
-        })
-        .then(() => {
-            state.question = questions?.filter((question) => {
-                if(question.id == id) {
-                    return question;
-                }
-            })[0]
-        })
-    } catch(err) {
-        alert(err);
-    }
+    state.number = questions.length;
+
+    questions.map((q) => {
+        if(state.clientAnswers.length < state.number) {
+            state.clientAnswers = [ ...state.clientAnswers, { id: q.id, choice: 0, t: 0, f: 0, n: 1 } ]
+        }
+    })
+    
+    state.question = questions?.filter((question) => {
+        if(question.id == id) {
+            return question;
+        }
+    })[0]
+
+
+    
+    // try {
+    //     await fetch(uri + "questions")
+    //     .then(res => res.json())
+    //     .then((data) => {
+    //         questions = data;
+    //         state.number = questions.length;
+    //     })
+    //     .then(() => {
+    //         questions.map((q) => {
+    //             if(state.clientAnswers.length < state.number) {
+    //                 state.clientAnswers = [ ...state.clientAnswers, { id: q.id, choice: 0, t: 0, f: 0, n: 1 } ]
+    //             }
+    //         })
+    //     })
+    //     .then(() => {
+    //         state.question = questions?.filter((question) => {
+    //             if(question.id == id) {
+    //                 return question;
+    //             }
+    //         })[0]
+    //     })
+    // } catch(err) {
+    //     alert(err);
+    // }
 }
