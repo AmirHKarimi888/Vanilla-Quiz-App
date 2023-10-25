@@ -13,47 +13,47 @@
         },
         {
             "id": 2,
-            "text": "",
+            "text": "Root of the number '1234321':",
             "answers": [
-                { "id": 1, "answer": 0 },
-                { "id": 2, "answer": 0 },
-                { "id": 3, "answer": 0 },
-                { "id": 4, "answer": 0 }
+                { "id": 1, "answer": 1111 },
+                { "id": 2, "answer": 1110 },
+                { "id": 3, "answer": 1101 },
+                { "id": 4, "answer": 1011 }
             ],
-            "true": 3
+            "true": 1
         },
         {
             "id": 3,
-            "text": "",
+            "text": "2, 8, 18, 32, ?",
             "answers": [
-                { "id": 1, "answer": 0 },
-                { "id": 2, "answer": 0 },
-                { "id": 3, "answer": 0 },
-                { "id": 4, "answer": 0 }
+                { "id": 1, "answer": 48 },
+                { "id": 2, "answer": 52 },
+                { "id": 3, "answer": 46 },
+                { "id": 4, "answer": 50 }
             ],
-            "true": 3
+            "true": 4
         },
         {
             "id": 4,
-            "text": "",
+            "text": "sin(53):",
             "answers": [
-                { "id": 1, "answer": 0 },
-                { "id": 2, "answer": 0 },
-                { "id": 3, "answer": 0 },
-                { "id": 4, "answer": 0 }
+                { "id": 1, "answer": 0.7 },
+                { "id": 2, "answer": 0.8 },
+                { "id": 3, "answer": 0.9 },
+                { "id": 4, "answer": 0.5 }
             ],
-            "true": 3
+            "true": 2
         },
         {
             "id": 5,
-            "text": "",
+            "text": "Is a JS library:",
             "answers": [
-                { "id": 1, "answer": 0 },
-                { "id": 2, "answer": 0 },
-                { "id": 3, "answer": 0 },
-                { "id": 4, "answer": 0 }
+                { "id": 1, "answer": "Vue" },
+                { "id": 2, "answer": "Angular" },
+                { "id": 3, "answer": "Svelte" },
+                { "id": 4, "answer": "Jquery" }
             ],
-            "true": 3
+            "true": 4
         }
     ]
 }

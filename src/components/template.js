@@ -11,6 +11,10 @@ const template = `
     <div class="pagination">
 
     </div>
+
+    <div class="finish">
+    
+    </div>
 </main>
 `
 
